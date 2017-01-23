@@ -44,9 +44,7 @@
 	}
 
     boton.addEventListener("click", function(){
-        setTimeout(function(){ 
-                agregarTarea(); 
-        }, 100);
+        agregarTarea();
 		areaTexto.value = "";
         areaTexto.focus();
         
