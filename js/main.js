@@ -44,10 +44,15 @@
 	}
 
     boton.addEventListener("click", function(){
-        agregarTarea();
-		areaTexto.value = "";
-        areaTexto.focus();
         
-	    });
+        if (areaTexto.value == null || areaTexto.value.length == 0 || /^\s*$/.test(areaTexto.value)){
+        alert ('No agregaste ninguna tarea');
+        }else {
+            agregarTarea();
+            areaTexto.value = "";
+            areaTexto.focus(); 
+        }
+        
+    });
     
 
